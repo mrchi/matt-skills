@@ -4,8 +4,8 @@ This repository is a **fork** of [mattpocock/skills](https://github.com/mattpoco
 
 ## Customizations in this fork
 
-- `implement` skill: slash-command references (`/tdd`, `/code-review`) changed to explicit Skill tool calls (`tdd`, `mattpocock-skills:code-review`) so they work reliably when the skill is invoked through the plugin
-- `implement-spec` skill: promoted from `in-progress/` to `engineering/` so it ships in the plugin, and routed in `ask-matt`
+- `implement` skill: slash-command references changed to explicit Skill tool calls, and code review must be invoked by full name `mattpocock-skills:code-review` (never the bare built-in `code-review` skill) so the two-axis Standards + Spec review always runs
+- `implement-spec` skill: promoted from `in-progress/` to `engineering/` so it ships in the plugin, routed in `ask-matt`, and its closing code review likewise calls `mattpocock-skills:code-review` by full name
 - `grill-with-docs` skill: added an end-of-session protocol that writes the agreed glossary terms and ADRs to disk and then stops, so the interview never silently proceeds into implementation
 
 ## License & credits

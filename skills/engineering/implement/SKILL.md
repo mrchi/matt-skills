@@ -10,6 +10,6 @@ Call the Skill tool with "tdd" where possible, at pre-agreed seams.
 
 Run typechecking regularly, single test files regularly, and the full test suite once at the end.
 
-Once done, call the Skill tool with "mattpocock-skills:code-review" — the two-axis Standards + Spec review — before committing.
+Once done, call the Skill tool with exactly "mattpocock-skills:code-review" (the two-axis Standards + Spec review, never the bare "code-review" skill) before committing.
 
 Commit your work to the current branch.
