@@ -5,3 +5,7 @@ disable-model-invocation: true
 ---
 
 Call the Skill tool twice, for "grilling" and "domain-modeling".
+
+## End of session
+
+This skill produces documentation only. Once the interview reaches a shared understanding and the user confirms it, stop: do not write code, do not refactor, do not start implementation, and do not call `implement` or any other build step, unless the user explicitly asks.
