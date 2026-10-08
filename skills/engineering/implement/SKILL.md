@@ -12,6 +12,6 @@ Call the Skill tool with "tdd" where possible, at pre-agreed seams.
 
 Run typechecking regularly, single test files regularly, and the full test suite once at the end.
 
-Once done, call the Skill tool with "code-review" to review the work.
+Once done, call the Skill tool with exactly "mattpocock-skills:code-review" to review the work. Qualify the name: the bare "code-review" resolves to Claude Code's own built-in review, not this two-axis Standards + Spec one.
 
 Commit your work to the current branch.
