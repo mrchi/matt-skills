@@ -63,6 +63,10 @@ This is a known problem on GitHub. The tracker's blocked-by count only drops whe
 
 No. People ask because the skills now reach into implementation: "is Sandcastle still relevant? Your skills now seem to be able to handle implementation as well." `implement-spec` puts an agent in charge of orchestration inside one harness session, which needs no infrastructure and lets you watch and steer. For work that is truly [AFK](https://www.aihero.dev/ai-coding-dictionary/afk), a deterministic loop ([Sandcastle](https://github.com/mattpocock/sandcastle), a shell script, a CI job) is faster, cheaper, and more reliable, because no agent makes the orchestration decisions.
 
+**Where do the glossary and ADRs from `grill-with-docs` go?**
+
+They go on the integration branch. `grill-with-docs` writes `GLOSSARY.md` and ADRs to your checkout and does not commit them. The glossary and ADRs belong to the spec, so the run moves them to the spec's branch. You do not commit them yourself, and your default branch does not keep a second copy. Your other uncommitted changes stay where they are.
+
 **A ticket's key test was skipped inside its worktree, and it reported green.**
 
 A worktree holds only what git tracks. Tests that read gitignored fixtures, local databases, or credentials can silently skip there. For a ticket whose verification depends on untracked material, tell the orchestrator to run it in the main checkout instead.
